@@ -17,11 +17,4 @@ Classes :
 - Constants : Specifying module to keep centralized contants.
 
 
-GameManager ---composition---> DiceGame ---composition---> (Dice, Player)
-                                   |
-                                   |
-                               Injecting
-                                   |
-                                   |
-                                   |
-                                 Rules
+GameManager ---composition---> DiceGame(Injecting Rules) ---composition---> (Dice, Player)
